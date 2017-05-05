@@ -1,0 +1,12 @@
+header {
+    position: relative;
+    height: 60px;
+    background: white;
+    border-bottom: 1px solid $color-grey-100;
+
+    @media(min-width: $desktop){
+        height: 80px
+    }
+
+    .menu-button {}
+}
