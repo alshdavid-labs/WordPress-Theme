@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 8);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -73,9 +73,9 @@
 "use strict";
 
 
-__webpack_require__(7);
+__webpack_require__(2);
 
-__webpack_require__(8);
+__webpack_require__(3);
 
 /***/ }),
 /* 1 */
@@ -84,10 +84,10 @@ __webpack_require__(8);
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2);
+var content = __webpack_require__(4);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(4)(content, {});
+var update = __webpack_require__(6)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -107,18 +107,47 @@ if(false) {
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(3)(undefined);
+"use strict";
+
+
+$(function (_) {
+    //Make main the full height of the screen
+
+    var main_height = $(window).height();
+
+    main_height = main_height - $('header').outerHeight();
+    main_height = main_height - $('footer').outerHeight();
+
+    if ($('#wpadminbar').outerHeight()) {
+        main_height = main_height - $('#wpadminbar').outerHeight();
+    }
+
+    $('main').css({ 'min-height': main_height });
+});
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(5)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  font-family: \"Roboto\", sans-serif;\n  box-sizing: border-box;\n  list-style-type: none;\n  text-decoration: none;\n  color: black; }\n\n.content-max-width {\n  max-width: 940px;\n  width: 100%;\n  margin: 0 auto; }\n\n._page {\n  position: relative; }\n\n@media (max-width: 1024px) {\n  .desktop {\n    display: none !important; } }\n\n@media (min-width: 1024px) {\n  .mobile {\n    display: none !important; } }\n\n@media screen and (min-width: 860px) {\n  .tablet-and-down {\n    display: none !important; } }\n\n@media screen and (min-width: 400px) {\n  .mobile-and-down {\n    display: none !important; } }\n\n@media screen and (max-width: 1024px) {\n  .desktop-and-up {\n    display: none !important; } }\n\n@media screen and (max-width: 860px) {\n  .tablet-and-up {\n    display: none !important; } }\n\nheader {\n  position: relative;\n  height: 60px;\n  background: white;\n  border-bottom: 1px solid #E0E0E0; }\n\n@media (min-width: 1024px) {\n    header {\n      height: 80px; } }\n\nfooter {\n  height: 40px;\n  background: white;\n  border-top: 1px solid #E0E0E0; }\n\n.admin-bar .mobile-menu {\n  top: 46px; }\n\nbody.open-menu .mobile-menu {\n  -webkit-transform: translateX(0px);\n          transform: translateX(0px); }\n\n.mobile-menu {\n  position: fixed;\n  z-index: 999;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  background: white;\n  max-width: 90%;\n  width: 300px;\n  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.08);\n  transition: -webkit-transform .25s;\n  transition: transform .25s;\n  transition: transform .25s, -webkit-transform .25s;\n  -webkit-transform: translateX(100%) translateX(20px);\n          transform: translateX(100%) translateX(20px); }\n\n.mobile-menu li a, .mobile-menu .close {\n    display: block;\n    line-height: 60px;\n    padding: 0 10px;\n    margin: 0 10px;\n    border-bottom: 1px solid #F5F5F5; }\n\n.mobile-menu .ion-close {\n    float: right;\n    font-size: 20px; }\n", ""]);
+exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  font-family: \"Roboto\", sans-serif;\n  box-sizing: border-box;\n  list-style-type: none;\n  text-decoration: none; }\n\n.content-max-width {\n  max-width: 940px;\n  width: 100%;\n  margin: 0 auto; }\n\n._page {\n  position: relative; }\n\n@media (max-width: 1024px) {\n  .desktop {\n    display: none !important; } }\n\n@media (min-width: 1024px) {\n  .mobile {\n    display: none !important; } }\n\n@media screen and (min-width: 860px) {\n  .tablet-and-down {\n    display: none !important; } }\n\n@media screen and (min-width: 400px) {\n  .mobile-and-down {\n    display: none !important; } }\n\n@media screen and (max-width: 1024px) {\n  .desktop-and-up {\n    display: none !important; } }\n\n@media screen and (max-width: 860px) {\n  .tablet-and-up {\n    display: none !important; } }\n\nheader {\n  position: relative;\n  height: 60px;\n  background: white;\n  border-bottom: 1px solid #E0E0E0; }\n\n@media (min-width: 1024px) {\n    header {\n      height: 80px; } }\n\nfooter {\n  height: 40px;\n  background: white;\n  border-top: 1px solid #E0E0E0; }\n\n.admin-bar .mobile-menu {\n  top: 46px; }\n\nbody.open-menu .mobile-menu {\n  -webkit-transform: translateX(0px);\n          transform: translateX(0px); }\n\n.mobile-menu {\n  position: fixed;\n  z-index: 999;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  background: white;\n  max-width: 90%;\n  width: 300px;\n  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.08);\n  transition: -webkit-transform .25s;\n  transition: transform .25s;\n  transition: transform .25s, -webkit-transform .25s;\n  -webkit-transform: translateX(100%) translateX(20px);\n          transform: translateX(100%) translateX(20px); }\n\n.mobile-menu li a, .mobile-menu .close {\n    display: block;\n    line-height: 60px;\n    padding: 0 10px;\n    margin: 0 10px;\n    border-bottom: 1px solid #F5F5F5; }\n\n.mobile-menu .ion-close {\n    float: right;\n    font-size: 20px; }\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 3 */
+/* 5 */
 /***/ (function(module, exports) {
 
 /*
@@ -200,7 +229,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 4 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -237,7 +266,7 @@ var stylesInDom = {},
 	singletonElement = null,
 	singletonCounter = 0,
 	styleElementsInsertedAtTop = [],
-	fixUrls = __webpack_require__(5);
+	fixUrls = __webpack_require__(7);
 
 module.exports = function(list, options) {
 	if(typeof DEBUG !== "undefined" && DEBUG) {
@@ -496,7 +525,7 @@ function updateLink(linkElement, options, obj) {
 
 
 /***/ }),
-/* 5 */
+/* 7 */
 /***/ (function(module, exports) {
 
 
@@ -591,40 +620,11 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 6 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(0);
 module.exports = __webpack_require__(1);
-
-
-/***/ }),
-/* 7 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-$(function (_) {
-    //Make main the full height of the screen
-
-    var main_height = $(window).height();
-
-    main_height = main_height - $('header').outerHeight();
-    main_height = main_height - $('footer').outerHeight();
-
-    if ($('#wpadminbar').outerHeight()) {
-        main_height = main_height - $('#wpadminbar').outerHeight();
-    }
-
-    $('main').css({ 'min-height': main_height });
-});
-
-/***/ }),
-/* 8 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
 
 
 /***/ })
