@@ -24,7 +24,7 @@
         bottom: 0;
         width: 200px;
         height: 200px;
-        background-image: url("/images/logo.png");
+        /*background-image: url("/images/logo.png");*/
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
