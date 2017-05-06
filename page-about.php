@@ -9,7 +9,7 @@
 		<?php include('partials/header.php'); ?>
 		<?php include('partials/mobile-menu.php'); ?>
 
-		<main class="_page _page-template">
+		<main class="_page _page-about">
 
 		</main>
 			

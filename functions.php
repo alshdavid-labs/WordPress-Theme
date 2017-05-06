@@ -23,4 +23,18 @@ function wpse200296_before_admin_bar_render()
     
 }
 
+/**
+ * Remove customizer options.
+ *
+ * @since 1.0.0
+ * @param object $wp_customize
+ */
+function ja_remove_customizer_options( $wp_customize ) {
+   //$wp_customize->remove_section( 'static_front_page' );
+   //$wp_customize->remove_section( 'title_tagline'     );
+   //$wp_customize->remove_section( 'nav'               );
+   $wp_customize->remove_section( 'themes'              );
+}
+add_action( 'customize_register', 'ja_remove_customizer_options', 30 );
+
 ?>
