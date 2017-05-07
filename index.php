@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 
-	<?php include('partials/head.php'); ?>
+	<?php include('partials/_head.php'); ?>
+	<?php include('partials/_loader.php'); ?>
 
 	<body <?php body_class(); ?>>
 
 		<?php include('partials/header.php'); ?>
+		<?php include('partials/mobile-menu.php'); ?>
 
-		<main>
-			
+		<main class="_page _page-template">
+
 		</main>
 			
 		<?php include('partials/footer.php'); ?>
-		<?php wp_footer(); ?> 
-		<?php include('partials/scripts.php'); ?>
+		<?php include('partials/_scripts.php'); ?>
  	</body>
 </html>
+
+<?php wp_footer(); ?> 

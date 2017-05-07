@@ -1,0 +1,33 @@
+{
+  "name": "brightbird-base",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bundle.js",
+  "scripts": {
+    "start": "webpack --progress --colors --watch",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alshdavid/WordPress-Theme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alshdavid/WordPress-Theme/issues"
+  },
+  "homepage": "https://github.com/alshdavid/WordPress-Theme#readme",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-env": "^1.4.0",
+    "css-loader": "^0.28.0",
+    "node-sass": "^4.5.2",
+    "postcss-loader": "^1.3.3",
+    "postcss-smart-import": "^0.6.11",
+    "precss": "^1.4.0",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.16.1",
+    "webpack": "^2.4.1"
+  }
+}
